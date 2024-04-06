@@ -4,90 +4,90 @@
       "name": "Product 1",
       "price": 10.99,
       "description": "Description for Product 1",
-      "image": "https://via.placeholder.com/150"
+      "image": "https://picsum.photos/200/300/?random"
     },
     {
       "id": 2,
       "name": "Product 2",
       "price": 19.99,
       "description": "Description for Product 2",
-      "image": "https://via.placeholder.com/150"
+      "image": "https://picsum.photos/200/300/?random"
     }, 
     {
       "id": 3,
       "name": "Product 3",
       "price": 14.99,
       "description": "Description for Product 3",
-      "image": "https://via.placeholder.com/150"
+      "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 4,
         "name": "Product 4",
         "price": 25.99,
         "description": "Description for Product 4",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 5,
         "name": "Product 5",
         "price": 18.49,
         "description": "Description for Product 5",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 6,
         "name": "Product 6",
         "price": 29.99,
         "description": "Description for Product 6",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 7,
         "name": "Product 7",
         "price": 9.99,
         "description": "Description for Product 7",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 8,
         "name": "Product 8",
         "price": 32.99,
         "description": "Description for Product 8",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 9,
         "name": "Product 9",
         "price": 15.99,
         "description": "Description for Product 9",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 10,
         "name": "Product 10",
         "price": 22.99,
         "description": "Description for Product 10",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 11,
         "name": "Product 11",
         "price": 12.99,
         "description": "Description for Product 11",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 12,
         "name": "Product 12",
         "price": 27.99,
         "description": "Description for Product 12",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     },
     {
         "id": 13,
         "name": "Product 13",
         "price": 21.99,
         "description": "Description for Product 13",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://picsum.photos/200/300/?random"
     }
 ]
