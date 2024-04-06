@@ -19,7 +19,7 @@
       "price": 14.99,
       "description": "Description for Product 3",
       "image": "product3.jpg"
-    }
+    },
     {
         "id": 4,
         "name": "Product 4",
