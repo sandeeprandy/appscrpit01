@@ -4,91 +4,90 @@
       "name": "Product 1",
       "price": 10.99,
       "description": "Description for Product 1",
-      "image": "product1.jpg"
+      "image": "https://via.placeholder.com/150"
     },
     {
       "id": 2,
       "name": "Product 2",
       "price": 19.99,
       "description": "Description for Product 2",
-      "image": "product2.jpg"
+      "image": "https://via.placeholder.com/150"
     }, 
     {
       "id": 3,
       "name": "Product 3",
       "price": 14.99,
       "description": "Description for Product 3",
-      "image": "product3.jpg"
+      "image": "https://via.placeholder.com/150"
     },
     {
         "id": 4,
         "name": "Product 4",
         "price": 25.99,
         "description": "Description for Product 4",
-        "image": "product4.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 5,
         "name": "Product 5",
         "price": 18.49,
         "description": "Description for Product 5",
-        "image": "product5.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 6,
         "name": "Product 6",
         "price": 29.99,
         "description": "Description for Product 6",
-        "image": "product6.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 7,
         "name": "Product 7",
         "price": 9.99,
         "description": "Description for Product 7",
-        "image": "product7.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 8,
         "name": "Product 8",
         "price": 32.99,
         "description": "Description for Product 8",
-        "image": "product8.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 9,
         "name": "Product 9",
         "price": 15.99,
         "description": "Description for Product 9",
-        "image": "product9.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 10,
         "name": "Product 10",
         "price": 22.99,
         "description": "Description for Product 10",
-        "image": "product10.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 11,
         "name": "Product 11",
         "price": 12.99,
         "description": "Description for Product 11",
-        "image": "product11.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 12,
         "name": "Product 12",
         "price": 27.99,
         "description": "Description for Product 12",
-        "image": "product12.jpg"
-      },
-      {
+        "image": "https://via.placeholder.com/150"
+    },
+    {
         "id": 13,
         "name": "Product 13",
         "price": 21.99,
         "description": "Description for Product 13",
-        "image": "product13.jpg"
-      }
-  ]
-  
+        "image": "https://via.placeholder.com/150"
+    }
+]
