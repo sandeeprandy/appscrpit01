@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './App.css'; // Import CSS file
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import { Navbar, Nav, Container } from "react-bootstrap";
+
+
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -9,14 +12,16 @@ const App = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://appscrpit01.onrender.com/api/products'); // Fetch products from backend
+        const response = await fetch(
+          "https://appscrpit01.onrender.com/api/products"
+        ); // Fetch products from backend
         if (!response.ok) {
-          throw new Error('Failed to fetch products');
+          throw new Error("Failed to fetch products");
         }
         const data = await response.json(); // Parse JSON response
-        setProducts(data); // Set products state with fetched data
+        setProducts(data); 
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error("Error fetching products:", error);
       }
     };
 
@@ -33,90 +38,163 @@ const App = () => {
 
   return (
     <div>
-      {/* Header */}
       <header>
-        <h1>Page Title</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <h1>LOGO</h1>
+        <div className="icons">
+          <a href="#">🔍</a> 
+          <a href="#">❤️</a>
+          <a href="#">🛒</a> 
+          <a href="#">👤</a> 
+          <a href="#">🌐</a> 
+        </div>
+        <Navbar  expand="lg">
+          <Container>
+           
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto mx-auto">
+                <Nav.Link href="#">SHOP</Nav.Link>
+                <Nav.Link href="#">SKILL</Nav.Link>
+                <Nav.Link href="#">STORIES</Nav.Link>
+                <Nav.Link href="#">ABOUT</Nav.Link>
+                <Nav.Link href="#">CONTACT US</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
       </header>
 
-      {/* Filter Options */}
-      <div>
-        <button onClick={toggleFilter}>{showFilter ? 'Hide Filter' : 'Show Filter'}</button>
-        {showFilter && (
-          <div className="filter-options">
-            <h2>Filter Options</h2>
-            <label>
-              <input type="checkbox" /> Example 1
-            </label>
-            <label>
-              <input type="checkbox" /> Example 2
-            </label>
-            <label>
-              <input type="checkbox" /> Example 3
-            </label>
-          </div>
-        )}
-
-        {/* Recommended Button */}
-        <button onClick={toggleRecommended}>{showRecommended ? 'Hide Recommended' : 'Show Recommended'}</button>
-        {showRecommended && (
-          <div className="filter-options">
-            <h2>Recommended Filters</h2>
-            <label>
-              <input type="checkbox" /> Low to High
-            </label>
-            <label>
-              <input type="checkbox" /> High to Low
-            </label>
-            <label>
-              <input type="checkbox" /> Popular
-            </label>
-            <label>
-              <input type="checkbox" /> New Arrivals
-            </label>
-          </div>
-        )}
+      <div className="discover">
+        <h2>DISCOVER OUR PRODUCTS </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus
+          scelerisque. Dolor integer scelerisque nibh amet mi ut elementum
+          dolor.
+        </p>
       </div>
 
-      {/* Aside */}
-      <aside>
-        <h2>Aside Section</h2>
-        <p>This is a sidebar section.</p>
-      </aside>
+      <div className="filterbuttons">
+        <p onClick={toggleFilter}>
+          {showFilter ? "Hide Filter →" : "Show Filter ↓"}
+        </p>
 
-      {/* Main Content */}
+        <p onClick={toggleRecommended}>
+          {showRecommended ? "Hide Recommended →" : "Show Recommended  ↓"}
+        </p>
+      </div>
+
       <main>
-        <h2>Main Content</h2>
-        <ul>
-          {products.map(product => (
-            <li key={product.id}>
-              <img src={product.image} alt={product.name} />
-              <div>
-                <h3>{product.name}</h3>
-                <p>{product.description}</p>
-                <p>${product.price}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <div className="fliter">
+          {showFilter && (
+            <div className="filter-options">
+              <label>
+                <input type="checkbox" /> COSTAMUZBLE
+              </label>
+              <label>
+                <input type="checkbox" /> IDEAL FOR
+              </label>
+              <label>
+                <input type="checkbox" /> occasion
+              </label>
+              <label>
+                <input type="checkbox" /> WORK
+              </label>
+              <label>
+                <input type="checkbox" /> FABRIC
+              </label>
+              <label>
+                <input type="checkbox" /> SIZE
+              </label>
+              <label>
+                <input type="checkbox" /> WORK
+              </label>
+            </div>
+          )}{" "}
+        </div>
+        <div>
+          <ul className="products">
+            {products.map((product) => (
+              <li key={product.id}>
+                <img src={product.image} alt={product.name} />
+                <div>
+                  <h3>{product.name}</h3>
+                  <p>{product.description}</p>
+                  <p>${product.price}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          {showRecommended && (
+            <div className="recomend-options">
+              <label>
+                <input type="checkbox" /> Low to High
+              </label>
+              <label>
+                <input type="checkbox" /> High to Low
+              </label>
+              <label>
+                <input type="checkbox" /> Popular
+              </label>
+              <label>
+                <input type="checkbox" /> New Arrivals
+              </label>
+            </div>
+          )}
+        </div>
       </main>
 
-      {/* Additional Main Content */}
-      <main>
-        <h2>Additional Main Content</h2>
-        <p>This is some additional content.</p>
-      </main>
-
-      {/* Footer */}
       <footer>
-        <p>&copy; 2024 Your Company</p>
-        <p>Contact us at: info@example.com</p>
+        <div className="rigister">
+          <div>
+            <h1>BE THE FIRST TO KNOW</h1>
+            <p>rigister your email for updates from our store!</p>
+            <input placeholder="Enter Your Email" /> <button> Subscribe</button>
+          </div>
+
+          <div>
+            <h1>CONTACT US</h1>
+            <p>+48569875548</p>
+            <p>sandeeprandi123@gmail.com</p>
+            <h2>CURRENCY</h2>
+            <p>indian rupees</p>
+          </div>
+        </div>
+        <hr></hr>
+        <div className="rigister">
+          <div>
+            <h1>metta muse</h1>
+            <p>about us</p>
+            <p>stories</p>
+            <p>careers</p>
+          </div>
+
+          <div>
+            <h2>QUICK LINKS</h2>
+            <p>HOME</p>
+            <p>man fatishin</p>
+            <p>kids fashion</p>
+            <p>papulor products</p>
+            <p>new arrival</p>
+            <p>offers items</p>
+          </div>
+          <div>
+            <h2>FOLLOW US</h2>
+            <a href="#">📸</a>
+
+            <a href="#">🔗</a>
+            <p>PAYMENT METHODS</p>
+            <div className="icons">
+              <a href="#">💳</a> 
+              <a href="#">💳</a>
+              <a href="#">🍏💳</a> 
+              <a href="#">🌐💳</a> 
+              <a href="#">🛍️💳</a> 
+            </div>
+          </div>
+        </div>
+        <p style={{ textAlign: 'center' }}  >copy rights @2024 all rights resrved</p>
       </footer>
     </div>
   );

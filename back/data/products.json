@@ -89,5 +89,19 @@
         "price": 21.99,
         "description": "Description for Product 13",
         "image": "https://source.unsplash.com/200x200/?health"
-    }
+    },
+    {
+        "id": 14,
+        "name": "Product 1",
+        "price": 10.99,
+        "description": "Description for Product 1",
+        "image": "https://source.unsplash.com/200x200/?clothing"
+      },
+      {
+        "id": 15,
+        "name": "Product 2",
+        "price": 19.99,
+        "description": "Description for Product 2",
+        "image": "https://source.unsplash.com/200x200/?shoes"
+      } 
 ]
