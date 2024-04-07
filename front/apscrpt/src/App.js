@@ -173,8 +173,7 @@ const App = () => {
           <div>
             <h2>QUICK LINKS</h2>
             <p>HOME</p>
-            <p>man fatishin</p>
-            <p>kids fashion</p>
+           
             <p>papulor products</p>
             <p>new arrival</p>
             <p>offers items</p>
